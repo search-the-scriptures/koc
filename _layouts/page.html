@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  
+   
+  {{ content }}
+    {% if page.show_meta == true %}
+      {% include meta_info.html %}
+    {% endif %}  
+</div>
+
+{% unless page.hide_printmsg == true %}
+  {% include printmsgpages.html %}
+{% endunless %}
+
+<div class="page-break"></div>
+{% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}

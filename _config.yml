@@ -1,0 +1,114 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+#permalink:           pretty
+permalink: /blog/:year/:month/:day/:title/
+relative_permalinks: false
+encoding: utf-8
+# Setup
+title:               国度与圣约
+#tagline:            Pro Rege
+#description:         Christ The Center
+url:                 http://kingdomandcovenant.gitee.io
+baseurl:  ""
+urlimg: http://kingdomandcovenant.gitee.io/images/
+markdown: kramdown
+kramdown:
+math_engine: mathjax
+paginate: 5
+paginate_path: "/blog/page:num"
+excerpt_separator: <!--继续阅读-->
+default_bg: sitebg.jpg
+default_logo: sitelogo.png
+safe: false
+#timezone:    America/Chicago
+future:      true
+
+
+## code highlight options
+syntax_highlighter: rouge
+input: GFM
+
+gems:
+  - github-pages
+  - font-awesome-sass
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jekyll-toc
+plugins:
+  - jekyll-toc
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
+
+# About/contact
+author:
+  name:              国度与圣约事工
+  #url:               https://twitter.com/abcd
+  #avatar:         foo.png
+  #email:           
+
+# Owner/author information
+owner:
+  name:           国度与圣约事工
+  #avatar:         foo.png
+  #email:          
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  #description:
+  # Social networking links used in footer. Update and remove as you like.
+  #twitter:        abcd
+  #facebook:       
+  #github:         xyz123abc
+  #stackexchange:  
+  #linkedin:       https://www.linkedin.com/in/foo
+  #instagram:      
+  #flickr:
+  #tumblr:  
+  #google_plus:    https://plus.google.com/+foo
+  # orcid and google scholar IDs are different than standard username.
+  #orcid: xyz123abc
+  #gscholar: xyz123abc
+
+## sidebar links:
+# For external links add external: true
+links:
+  - title: <i class="iconside iconm-home"></i> 主页
+    url: /
+  - title: <i class="iconside iconm-user"></i> 信仰立场
+    url: /about/
+  - title: <i class="iconside iconm-quill"></i> 文章
+    url: /blog/
+  - title: <i class="fa fa-tags"></i>  专题
+    url: /topics/
+  - title: <i class="fa fa-archive"></i> 存档
+    url: /archive/
+  - title: <i class="fa fa-group"></i> 资源
+    url: /links/
+  - title: <i class="iconside iconm-wordpress"></i> 笔记本
+    url: /notes/
+  - title: <i class="iconside iconm-envelop"></i> 留言
+    url: https://shimo.im/forms/XN4Sh201nOI3LXcA/fill
+    external: true
+  - title: <i class="iconside iconm-feed2"></i> 订阅
+    url: /subscription/
+
+# Google Custom Search:
+google_search:  AIzaSyBroOvyVcam0XbCYrNe448DJXoIecOv1TU 
+
+# Twitter stream widget:
+# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
+#twitter_widget_id: xyz123abc
+
+# Add disqus username for Disqus comment board:
+disqus_shortname: kingdomandcovenant
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: kingdomandcovenant
+# Analytics and webmaster tools stuff goes here
+#google_analytics:   xyz123abc
+
+
+## END ##
