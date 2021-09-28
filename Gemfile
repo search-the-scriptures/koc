@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'nokogiri', '= 1.6.8.1'
+gem 'nokogiri', '1.12.5'
 gem 'addressable', '= 2.3.8'
 gem 'jekyll-toc'
 
